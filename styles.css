@@ -1,3 +1,4 @@
+
 /* Master Styles */
 body {
     font-family: "Lato", sans-serif;
@@ -228,6 +229,9 @@ body {
     font-size: 2em;
 }
 
+/* About Us Styles */
+
+
 
 .top3container{
   display:grid;
@@ -240,9 +244,20 @@ body {
   text-align:center;
   font-size:20px;
   background-color: black;
-
-
 }
+
+.eachperson h1{
+    color:white;
+  }
+
+  .eachperson h2{
+color: grey;
+  }
+  .eachperson h2:hover{
+    color:blue;
+    transition: 0.5s;
+  }
+
 .imgwrapper{
     display: block;
     margin-left: auto;
@@ -265,6 +280,11 @@ body {
     align-items: center;
     background-color: grey;
   }
+
+  #imghero h1 {
+      color: white;
+  }
+
   #projecthero{
     background-attachment: fixed;
     background-position: center;
@@ -278,15 +298,4 @@ body {
     justify-content: center;
     align-items: center;
     background-image:url("https://www.multimediasolutions.com/media/102990/website-design.jpg?anchor=center&mode=crop&width=940&height=432&rnd=131964461010000000");
-  }
-  h1{
-    color:white;
-  }
-
-  h2{
-color: grey;
-  }
-  h2:hover{
-    color:blue;
-    transition: 0.5s;
   }
