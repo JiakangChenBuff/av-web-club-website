@@ -15,7 +15,7 @@
         <div class="nav-wrapper">
 
             <div class="left-side">
-                
+
                 <div class="nav-link-wrapper active-nav-link">
 
                     <a href="home.html">Home</a>
@@ -35,7 +35,7 @@
                 </div>
 
             </div>
-            
+
             <div class="right-side">
 
                 <div class="brand">
@@ -59,8 +59,8 @@
                     <h1>Welcome to AV Web Dev!</h1>
 
                     <h2>Check out the projects you will make this year, as well as other people's projects!</h2>
-                    
-                    <img src = "images/arrow.png">
+
+                    <img src="images/arrow.png">
 
                 </div>
 
@@ -70,13 +70,15 @@
 
                 <div class="project-wrapper">
 
-                    <div class="project-background" style="background-image: url(images/front-end.png); background-size: 50%"></div>
+                    <div class="project-background"
+                        style="background-image: url(images/front-end.png); background-size: 50%"></div>
 
                     <div class="project-description-wrapper">
 
                         <h1>Static-Front End</h1>
 
-                        <h2>You will begin the year by making a simple, but well-designed "About Me" website, as you learn to master HTML and CSS, and basic web design.</h2>
+                        <h2>You will begin the year by making a simple, but well-designed "About Me" website, as you
+                            learn to master HTML and CSS, and basic web design.</h2>
 
                     </div>
 
@@ -84,13 +86,15 @@
 
                 <div class="project-wrapper">
 
-                    <div class="project-background" style="background-image: url(images/js-game.png); background-size: 55%"></div>
+                    <div class="project-background"
+                        style="background-image: url(images/js-game.png); background-size: 55%"></div>
 
                     <div class="project-description-wrapper">
 
                         <h1>JavaScript Game</h1>
 
-                        <h2>Next, you will add JavaScript to your toolkit. JavaScript is a powerful programming language that allows for interactive websites,
+                        <h2>Next, you will add JavaScript to your toolkit. JavaScript is a powerful programming language
+                            that allows for interactive websites,
                             and you will harness this power by making a fun JS game.
                         </h2>
 
@@ -100,13 +104,15 @@
 
                 <div class="project-wrapper">
 
-                    <div class="project-background"  style="background-image: url(images/back-end.png); background-size: 40%"></div>
+                    <div class="project-background"
+                        style="background-image: url(images/back-end.png); background-size: 40%"></div>
 
                     <div class="project-description-wrapper">
 
                         <h1>Full-Stack Development</h1>
 
-                        <h2>You will ascend to becoming a true full-stack developer in your final project, as you integrate a well-designed front-end website
+                        <h2>You will ascend to becoming a true full-stack developer in your final project, as you
+                            integrate a well-designed front-end website
                             with a well-designed back-end, making use of database languages such as PHP or SQL.
                         </h2>
 
@@ -149,7 +155,7 @@
 <script>
 
     const projectItems = document.querySelectorAll('.project-wrapper');
-    
+
     projectItems.forEach(projectItem => {
         projectItem.addEventListener('mouseover', () => {
             projectItem.childNodes[1].classList.add('img-darken');
