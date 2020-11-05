@@ -173,8 +173,9 @@ body {
 .projects-button-wrapper {
     margin-top: 1%;
     display: grid;
-    width: 100%;
+    width: 95%;
     height: 100px;
+    margin-left: 2.5%;
 }
 
 .projects-button-wrapper .button {
@@ -267,3 +268,33 @@ body {
     height:100px;
 }
 
+/* Project Grid Styling */
+
+.projects-grid-wrapper {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    gap: 25px;
+}
+
+.grid-name-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-name-wrapper h1 {
+    color: white;
+    font-size: 2.5vw;
+    align-self: center;
+}
+
+.grid-button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-button-wrapper a {
+    padding: 20px 0;
+}
