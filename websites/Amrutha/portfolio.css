@@ -1,0 +1,184 @@
+html body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar{
+    width: 100%;
+    height: 10%;
+    /*border-bottom: 1px solid white;*/
+    padding-top: 20px;
+    background-color: #868da6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr 2fr 2fr;
+    position: fixed;
+}
+.footer{
+    width: 100%;
+    color: lightgray;
+    height: 15%;
+    font-size: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: black;
+    padding-top: 15px;
+    border-top: 2px solid gold;
+    text-align: center;
+}
+/* .col1{
+    text-align: center;
+}
+.col3{
+    text-align: center;
+}  */
+.col2 a:hover{
+    color: teal;
+    border-bottom: none;
+    padding: none;
+    text-decoration: underline;
+}
+.col2 a{
+    color: black;
+    border-bottom: none;
+    padding: none;
+}
+.instagram {
+    display: flex;
+}
+.instagram img {
+    width: 55px;
+    height: 30px;
+}
+.twitter {
+    display: flex;
+}
+.twitter img {
+    width: 40px;
+    height: 30px;
+}
+.meteor {
+    display: flex;
+}
+.meteor i{
+    width: 40px;
+    height: 40px;
+}
+.quiz{
+    text-decoration-color: black;
+}
+.quiz input {
+    width: 20%;
+    height: 20%;
+}
+.quiz p{
+    padding-left: 20px;
+}
+.submit{
+    width: 20%;
+    height: 10%;
+    color: black;
+    text-decoration-color: black;
+}
+.parent-container{
+    height: 90%;
+    padding-top: 6.9%;
+    background-color: white;
+    display: grid;
+    text-decoration-color: black;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-rows: 1fr 1fr 1fr;*/
+}
+.child1{
+    border: solid black 2px;
+    padding: 10px;
+    text-align: center;
+}
+.child2{
+    border: solid black 2px;
+    padding: 10px;
+    text-align: center;
+}
+.child3{
+    border: solid black 2px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://images.theconversation.com/files/223729/original/file-20180619-126566-1jxjod2.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop");
+}
+.container{
+    height: 120%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://ebionline.org/wp-content/uploads/2020/06/Forest.jpg");
+}
+input{
+    padding: 5px;
+    width: 50%;
+    height: 50%;
+    background: none;
+    border: solid white 2px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+}
+a:hover{
+    padding-bottom: 8px;
+    border-bottom: solid gold 2px;
+}
+.pushedright{
+    margin-right: 30px;
+}
+button{
+    width: 50%;
+    height: 50%;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: none;
+    border: solid white 2px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+button:hover{
+    color: gold;
+    border-color: gold;
+}
+.banner{
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    border: solid gold 2px;
+    background: white;
+   /* position: absolute;*/
+    position: absolute;
+    top: 500px;
+    left: 700px;
+}
+@media (max-width: 800px) {
+    .banner{
+        position: absolute;
+        left: 50px;
+        top: 300px;
+    }
+    button{
+        margin-left: 20px;
+        width: 70%;
+        padding-left: 9px;
+        font-size: 10%;
+    }
+    input{
+        margin-left: 20px;
+        width: 70%;
+        font-size: 10%;
+    }
+    a{
+        font-size: 10%;
+    }
+}
