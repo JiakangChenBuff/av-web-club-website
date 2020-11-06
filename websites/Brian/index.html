@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>
+            Hello world
+        </title>
+        <style>
+            
+            body{
+                font-family: Georgia, 'Times New Roman';
+                margin: 0;
+                
+            }
+            
+             .nav-wrapper{
+                display: flex;
+                justify-content: space-between;
+                position: absolute;
+                 width:98%;
+                 padding:15px;
+                background-color:black;
+                z-index: 2;
+                opacity: 0.8;
+            }
+             .nav-links-wrapper{
+                display: flex;
+                align-items:center;
+                text-decoration: none;                
+            }
+            .nav-logo{
+                color: #0e5c9c;
+                 margin-left:7px;
+                 
+                }
+            .nav-link{
+                display:flex;
+                align-items: center;
+                justify-content:center;
+
+              font-size: 1.2em;
+              margin: 5px;
+               height: 40px;
+               width:100px;
+               border-radius: 17px;
+               background-color: #63cdda;
+               border: 2px solid #1B1464; 
+            }
+            .nav-links-wrapper a{
+                text-decoration:none;
+                text-align:center;
+            } 
+            #search{
+            height:40px;
+            width:200px;
+            border-radius: 10px;
+            font-size:17px;
+            }
+            
+            #search::placeholder{
+                color:black;
+
+            }
+            
+            #hero{
+                height: 500px;
+                background-image:
+                 url("https://scx2.b-cdn.net/gfx/news/2018/europeslostf.jpg");
+                background-repeat:no-repeat;
+                background-size: cover;
+                position: relative;
+            }
+            #text{
+                font-size: 60px;
+                position: absolute;
+                top: 180px;
+                left: 50px;
+                color: white;
+                text-shadow: 2px 2px black;
+                z-index:0;
+            }
+             .wrapper{
+                    display:grid;
+                    height: 400px;
+                    width: 98%;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-gap: 0.5em;
+                    padding:1em;
+                    border-width: 0.25em;
+
+                }
+
+                .first{
+                    background-image:url("https://www.positive.news/wp-content/uploads/2019/03/feat-1800x0-c-center.jpg");
+                    grid-column: 1/3;
+                    grid-row:1/3;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    
+
+                }
+                .second{
+                    background-image: url("https://api.timeforkids.com/wp-content/uploads/2019/09/final-cover-forest.jpg");
+                    background-size:cover;
+                    background-repeat:no-repeat;
+                    
+                }
+                .third{
+                    background-image: url("https://hub.umd.edu/sites/default/files/2019-04/image/forest-grass-nature-158251_1920x1080.jpg");
+                    background-size:cover;
+                    background-repeat:no-repeat;              
+                    }
+                #container1{
+                    background-color:black;
+
+                }
+                @media(max-width:800px){
+                    .wrapper{
+                    grid-template-columns: 1fr;}
+                    .first{
+                        grid-row: 1;
+                        grid-column: 1;
+                        background-image: url("https://miro.medium.com/max/1024/0*K8-fl0Mo7xyDMR94.jpg");
+                        width:96%;
+                        background-size:cover;
+                        background-repeat:no-repeat;
+                    }
+
+                    #text{
+                        font-size:40px;
+                        text-align:center;
+                        position:absolute;
+                        left:23%;
+
+                    }
+                    .nav-wrapper{
+                        display:block;
+                    }
+                    .nav-links-wrapper{
+                        justify-content: center;
+                    }
+                    .nav-logo{
+                        text-align: center;
+                    }
+
+                       
+                        
+                    
+
+
+                }
+           
+            @media(min-width:1300px){
+                #text{
+                    text-align:center;
+                    position:absolute;
+                    left:33%
+
+                }
+
+
+            }
+            
+        </style>
+    </head>
+    <body>
+       
+            <div class="nav-wrapper">
+                <div class="nav-logo">
+          
+                  <h2>MY WEBSITE</h2>
+          
+              </div>
+          
+                  <div class="nav-links-wrapper">
+                    <a href="">
+                      <div class="nav-link">
+                         Home
+                      </div>
+                    </a>
+                    <a  href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">
+                      <div class="nav-link">
+                          About
+                      </div>
+                    </a>
+                    <a  href="">
+                      <div class="nav-link">
+                         Other
+                      </div>
+                    </a>
+                <input type = "text" id="search" placeholder="search">
+                </div>
+            </div>
+                <div id="hero">
+                    <h1 id="text">This is my favorite <br> place</h1>
+                    </div>
+
+                    <div id="container1">
+
+                        <div class="wrapper">
+
+                            <div class="first">
+
+                            </div>
+                            <div class="second">
+                                
+                            </div>
+                            <div class="third">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+<pre>
+
+
+
+
+
+
+</pre>                  
+
+            
+    </body>
+</html>
