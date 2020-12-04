@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class = "sticky-div">
+
+        <div class="nav-wrapper">
+
+            <div class="nav-links-wrapper">
+    
+                <div class="active-nav-link-wrapper">
+    
+                    <a href="home.html">Home</a>
+    
+                </div>
+    
+                <div class="nav-link-wrapper">
+    
+                    <a href="about.html">About</a>
+    
+                </div>
+    
+                <div class="nav-link-wrapper">
+    
+                    <a href="other.html">Other</a>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+    <div class="hero-wrapper">
+
+        <img src = "images/landscape.jpg" alt = "landscape image">
+
+        <h1 id="Portfolio1">Portfolio</h1>
+        <h1 id="Portfolio2">Portfolio</h1>
+        <h1 id="Portfolio3">Portfolio</h1>
+
+        <h2 id="Name1">of Lucas Zhong</h2>
+        <h2 id="Name2">of Lucas Zhong</h2>
+        <h2 id="Name3">of Lucas Zhong</h2>
+
+    </div>
+
+    <div class="desc-wrapper">
+        <div id="description-wrapper">
+            <h3>Description goes here.</h3>
+        </div>
+
+    </div>
+
+    <div class="space">
+
+    </div>
+
+    <script>
+        
+        document.getElementById("Portfolio2").style.visibility = "hidden";
+        document.getElementById("Portfolio3").style.visibility = "hidden";
+        document.getElementById("Name2").style.visibility = "hidden";
+        document.getElementById("Name3").style.visibility = "hidden";
+
+        document.onreadystatechange = function (){
+            if (document.readyState !== "complete") {
+                document.querySelector("body").style.visibility = "hidden";
+            } else {
+                document.querySelector("body").style.visibility = "visible";
+            }
+        }
+
+        setTimeout(function(){
+            document.getElementById("Portfolio2").style.visibility = "visible";
+            document.getElementById("Portfolio1").style.visibility = "hidden";
+            document.getElementById("Name2").style.visibility = "visible";
+            document.getElementById("Name1").style.visibility = "hidden";
+        }, 1000);
+
+        setTimeout(function(){
+            document.getElementById("Portfolio3").style.visibility = "visible";
+            document.getElementById("Portfolio2").style.visibility = "hidden";
+            document.getElementById("Name3").style.visibility = "visible";
+            document.getElementById("Name2").style.visibility = "hidden";
+        }, 2000);
+
+    </script>
+
+</html>

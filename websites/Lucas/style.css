@@ -1,0 +1,247 @@
+body{
+    margin: 0;
+}
+
+.sticky-div {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-family: 'Roboto';
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: #f1f1f1;
+}
+
+.nav-links-wrapper{
+    display: flex;
+    margin-left: 15px;
+    align-items:center;
+}
+
+.nav-link-wrapper{
+    padding-right: 50px;
+}
+
+.nav-link-wrapper a{
+    font-size: 3em;
+    text-decoration: none;
+    color: rgb(142, 68, 202);
+}
+
+.active-nav-link-wrapper{
+    display: flex;
+    margin-left: 15px;
+    align-items:center;
+}
+
+.active-nav-link-wrapper{
+    padding-right: 50px;
+}
+
+.active-nav-link-wrapper a{
+    font-size: 3em;
+    text-decoration: none;
+    color: rgb(142, 68, 202);
+    border-bottom:2px solid rgb(142, 68, 202);
+}
+
+.nav-link-wrapper a:hover{
+    border-bottom:2px solid rgb(142, 68, 202);
+}
+
+@keyframes slideupright {
+    from{
+        left: -20%;
+        top: 40%;
+        color: rgb(26, 182, 174);
+    }
+    to{
+        left: 15%;
+        top: 10%;
+        color: rgb(26, 182, 101); 
+    }
+}
+
+@keyframes slidedownleft {
+    from{
+        left: 15%;
+        top:10%;
+        color: rgb(26, 182, 101); 
+    }
+    to{
+        left: 5%;
+        top: 40%;
+        color: rgb(26, 81, 182);
+    }
+}
+
+@keyframes slideFinal1{
+    from{
+        left: 5%;
+        top: 40%;
+        color: rgb(26, 81, 182);
+    }
+    to{
+        left: 30%;
+        top:20%;
+        color: rgb(142, 68, 202);
+    }
+}
+
+.hero-wrapper{
+    position: relative;
+    height: 750px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.hero-wrapper img {
+    position: absolute;
+    top:0;
+    height:750px;
+    width:100%;
+    filter: brightness(30%);
+}
+
+#Portfolio1{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    color: lightseagreen;
+    font-size: 8em;
+    animation: slideupright 1s forwards;
+}
+
+#Portfolio2{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    color: lightseagreen;
+    font-size: 8em;
+    animation: slidedownleft 1s forwards;
+    animation-delay: 1s;
+}
+
+#Portfolio3{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    color: lightseagreen;
+    font-size: 8em;
+    animation: slideFinal1 1s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes slideleft {
+    from{
+        right: -20%;
+        top: 60%;
+        color: rgb(26, 182, 174);
+    }
+    to{
+        right :15%;
+        top: 60%;
+        color: rgb(26, 182, 101); 
+    }
+}
+
+@keyframes slideupback{ 
+    from{
+        right:15%;
+        top: 60%;
+        color: rgb(26, 182, 101); 
+    }
+    to{
+        top: 40%;
+        right: 25%; 
+        color: rgb(26, 81, 182);
+
+    }
+}
+
+        
+@keyframes slideFinal2{
+    from{
+        right: 25%;
+        top:40%;
+        color: rgb(26, 81, 182);
+    }
+    to{
+        right: 35%;
+        top: 50%;
+        color: rgb(142, 68, 202);
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        filter: brightness(0%);
+    }
+    to {
+        filter: brightness(25%);
+    }
+}
+
+
+#Name1{
+    position: absolute;
+    top: 60%;
+    right: -20%;
+    color: lightseagreen;
+    font-size: 5em;
+    animation: slideleft 1s forwards;
+}
+
+#Name2{
+    position: absolute;
+    top: 60%;
+    right: 15%;
+    color: lightseagreen;
+    font-size: 5em;
+    animation: slideupback 1s forwards;
+    animation-delay: 1s;
+}
+
+#Name3{
+    position: absolute;
+    right: 25%;
+    top:40%;
+    color: lightseagreen;
+    font-size: 5em;
+    animation: slideFinal2 1s forwards;
+    animation-delay: 2s;
+}
+
+.hero-wrapper img {
+    position: absolute;
+    top:0;
+    height:750px;
+    width:100%;
+    filter: brightness(0%);
+    animation: fadeIn 4s forwards;
+}
+
+.desc-wrapper{
+    font-family: 'Roboto';
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.desc-wrapper h3{
+    font-size: 1.5em;
+    color: lightseagreen;
+}
+
+#description-wrapper {
+    background-color: #f1f1f1;
+}
+
+.space {
+    height: 500px;
+}
